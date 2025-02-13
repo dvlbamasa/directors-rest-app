@@ -3,7 +3,9 @@ Directors - Rest API Application (Spring Boot Solution)
 
 ##  Implementation
 
-- Used Spring Cloud Openfeign for a declaritive web REST client
+- Used Java 17 and Spring Boot v3.3.3
+- Used Spring Cloud Openfeign for a declarative web REST client
+- Used Lombok library to reduce boilerplate codes
 - Added simple unit tests using Mockito
 
 ### Logic behind the data processing:
