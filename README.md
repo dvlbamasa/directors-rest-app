@@ -38,12 +38,12 @@ List<String> directors = allMovies.stream()
 - Performed stream operations to achieve the required result of getting the Directors' name with count greater than the threshold; sorted alphabetically
 
 ##  Setup
+Below are **three** different options on how to run the application.
 
-**Pre-requisite**
+**Pre-requisites**
 
--You should have java 17 jdk and maven installed on your machine
-
--Clone the repository to your local machine
+- You should have **Java 17 JDK** and **Maven** installed on your machine
+- Cloned the repository to your local machine
 
 
 ### 1. Run directly from source code:
