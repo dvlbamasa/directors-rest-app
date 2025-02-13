@@ -35,12 +35,13 @@ public class DirectorsAppService {
             page++;
         }
 
-        Set<String> directors = allMovies.stream()
+        List<String> directors = allMovies.stream()
                 .collect(Collectors.groupingBy(MovieDataDto::getDirector, Collectors.counting()))
                 .entrySet().stream()
                 .filter(entry -> entry.getValue() > threshold)
                 .map(Map.Entry::getKey)
-                .collect(Collectors.toCollection(TreeSet::new));
+                .sorted()
+                .toList();
 
         return ResponseDto.builder().directors(directors).build();
     }
